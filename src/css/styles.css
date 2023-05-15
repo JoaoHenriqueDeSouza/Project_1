@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+header .logo , header .imagem-botao {
+    width: 30px;
+
+
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border:none;
+    
+}
+
+header .logo:hover , header .imagem-botao:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
+
+}
+
+main {   
+    padding: 25px;
+}
+
+
+
+main .listagem-pokemons {       
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(5 ,1fr);    
+    gap: 30px;
+    justify-content: center;
+    
+      
+}
+
+main .cartao-pokemon {
+    background-color:#d8e3ec ;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;  
+    width: 200px;      
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.2ms ease-in-out;
+   
+    
+}
+
+main .cartao-pokemon:hover{
+    transform: scale(1.10);
+    background-color:#96d9d6 ;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+main .cartao-pokemon .informacoes span {    
+    padding: 5px;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;    
+    gap:15px;
+   
+}
+
+main .cartao-pokemon .tipos .tipo-grama,
+main .cartao-pokemon .tipos .tipo-veneno,
+main .cartao-pokemon .tipos .tipo-fogo,
+main .cartao-pokemon .tipos .tipo-agua,
+main .cartao-pokemon .tipos .tipo-inseto {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .tipos .tipo-grama {
+    background-color: #7ac74c;
+
+}
+
+main .cartao-pokemon .tipos .tipo-veneno {
+    background-color: #df67ddfb;
+
+}
+
+main .cartao-pokemon .tipos .tipo-fogo {
+    background-color: #ee8130;
+
+}
+
+main .cartao-pokemon .tipos .tipo-agua {
+    background-color: #6390f0;
+
+}
+
+main .cartao-pokemon .tipos .tipo-inseto {
+    background-color: #df67ddfb;
+
+}
+
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.tema-escuro {
+    background-color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
